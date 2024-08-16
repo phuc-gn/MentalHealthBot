@@ -30,7 +30,7 @@ The chatbot is trained on a dataset of mental health resources which is publicly
 
 The chatbot is built using the following technologies:
 
-- Hugging Face Transformers: For training the chatbot model with LoRA and quantisation.
+- Hugging Face Transformers: For fine-tuning the Llama 3.1 8B model with LoRA and quantization.
 - Accelerate: For speeding up the training process with distributed training.
 - Discord.py: For creating the chatbot application.
 - Docker: For containerizing the chatbot application and LLM server.
