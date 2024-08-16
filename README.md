@@ -13,11 +13,11 @@ To use the chatbot, you should use Docker to run the chatbot locally. You can ru
 ```
 docker build -t mentalhealthbot .
 ```
-1. Run the following command to start the Docker container:
+5. Run the following command to start the Docker container:
 ```
 docker run -it mentalhealthbot
 ```
-1. The chatbot will start running and you can interact with it by sending messages in the chat with slash commands.
+6. The chatbot will start running and you can interact with it by sending messages in the chat with slash commands.
 ```
 /ask <your question>
 ```
