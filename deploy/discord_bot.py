@@ -13,10 +13,10 @@ server = 'http://localhost:5000/generate'
 
 async def get_vllm_response(prompt):
     try:
-        response = requests.post(server, json={"prompt": prompt, "max_tokens": 256})
+        response = requests.post(server, json={"prompt": prompt})
         return response.json().get('text', 'No response from vLLM.')
     except Exception as e:
-        return f"Error communicating with vLLM server: {str(e)}"
+        return f"Error communicating with LLM server: {str(e)}"
 
 @bot.command(name="ask", help="Ask the AI a question.")
 async def ask(ctx, *, question: str):
