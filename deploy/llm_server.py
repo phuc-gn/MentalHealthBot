@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
 from peft import PeftModel
 from trl import setup_chat_format
 
